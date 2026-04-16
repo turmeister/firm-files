@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Firm Files - Page Assurance and Advisory, PLLC</title>
+<style>
+  :root {
+    --brand: #A6502C;
+    --brand-dark: #7E3B1F;
+    --brand-light: #D98B5F;
+    --bg: #FAF7F4;
+    --card: #FFFFFF;
+    --text: #2B2420;
+    --muted: #7A6F68;
+    --border: #EDE3DA;
+    --shadow: 0 1px 2px rgba(43,36,32,0.04), 0 8px 24px rgba(166,80,44,0.06);
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 40px 28px 80px; }
+  .header { display: flex; align-items: center; gap: 18px; padding-bottom: 22px; border-bottom: 1px solid var(--border); margin-bottom: 32px; }
+  .logo { width: 52px; height: 52px; border-radius: 12px; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; letter-spacing: 0.5px; box-shadow: var(--shadow); }
+  .title-block h1 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em; }
+  .title-block p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+  .intro { margin: 0 0 28px; color: var(--muted); font-size: 15px; max-width: 720px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 14px; transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease; position: relative; overflow: hidden; }
+  .card::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--brand); opacity: 0; transition: opacity 0.15s ease; }
+  .card:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: var(--brand-light); }
+  .card:hover::before { opacity: 1; }
+  .card-icon { width: 42px; height: 42px; border-radius: 10px; background: #FBEFE7; color: var(--brand); display: flex; align-items: center; justify-content: center; }
+  .card-icon svg { width: 22px; height: 22px; }
+  .card-title { font-weight: 600; font-size: 16px; margin: 0; }
+  .card-desc { color: var(--muted); font-size: 14px; margin: 0; flex-grow: 1; }
+  .card-cta { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--brand); margin-top: 4px; }
+  .card-cta svg { width: 14px; height: 14px; }
+  .footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 12px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  .badge { display: inline-flex; align-items: center; gap: 6px; background: #FBEFE7; color: var(--brand-dark); font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
+  @media (max-width: 540px) { .wrap { padding: 24px 18px 60px; } .header { gap: 14px; } .logo { width: 44px; height: 44px; font-size: 17px; } .title-block h1 { font-size: 18px; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="logo">PA</div>
+      <div class="title-block">
+        <h1>Firm Files</h1>
+        <p>Page Assurance &amp; Advisory, PLLC &mdash; Internal Library</p>
+      </div>
+    </div>
+    <p class="intro">Internal repository for onboarding materials, standard operating procedures, and client project execution resources. Access is restricted to authorized firm personnel. All files are stored securely in SharePoint.</p>
+    <div style="margin-bottom: 22px;"><span class="badge"><span class="badge-dot"></span>Internal use only</span></div>
+    <div class="grid">
+      <a class="card" href="https://netorgft15539834.sharepoint.com/:f:/s/Owners15/IgBurlCxwuhwTp6G59cgbx5KASt1jm4ro689wYdZoBaFOpY?e=PnGqJ9" target="_blank" rel="noopener">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+        <h3 class="card-title">Internal Library (Root)</h3>
+        <p class="card-desc">Top-level shared drive containing all internal resources, templates, and reference materials.</p>
+        <span class="card-cta">Open in SharePoint <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M10 7h7v7"/></svg></span>
+      </a>
+    </div>
+    <div class="footer">
+      <span>&copy; Page Assurance &amp; Advisory, PLLC</span>
+      <span>Hosted securely &bull; Access managed via SharePoint</span>
+    </div>
+  </div>
+</body>
+</html>
